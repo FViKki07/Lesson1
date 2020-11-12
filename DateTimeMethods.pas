@@ -20,7 +20,15 @@ begin
     Result:=366
   else Result:=365;
 end;
-function DaysInYearRange(year1, year2: integer): integer := 0;
+function DaysInYearRange(year1, year2: integer): integer;
+begin
+  var n:=year1-year2;
+  Result:=year1;
+  for var i:=0 to n do
+  begin
+    result+=DaysInYear(year1+1);
+  end;
+end;
 function SecondsInHours(hours: integer): integer := 0;
 
 begin
