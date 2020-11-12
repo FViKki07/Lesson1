@@ -29,10 +29,7 @@ begin
     result+=DaysInYear(year1+1);
   end;
 end;
-function SecondsInHours(hours: integer): integer;
-begin
-  Result:=60*hours;
-end;
+function SecondsInHours(hours: integer): integer := 0;
 
 begin
 
