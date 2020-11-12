@@ -16,10 +16,7 @@ begin
 end;
 function DaysInYear(year: integer): integer := 0;
 function DaysInYearRange(year1, year2: integer): integer := 0;
-function SecondsInHours(hours: integer): integer;
-begin
-  REsult:=60*hours;
-end;
+function SecondsInHours(hours: integer): integer := 0;
 
 begin
 
