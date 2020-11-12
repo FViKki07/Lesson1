@@ -9,10 +9,7 @@ begin
     2: if IsLeapYear(year) then REsult:=29 else Result:=28;
   end;
 end;
-function LaterInDay(p1, p2: DateTime): DateTime ;
-begin
-  p1:=24.0;
-end;
+function LaterInDay(p1, p2: DateTime): DateTime := p1;
 function LaterInYear(p1, p2: DateTime): DateTime := p1;
 function DaysInYear(year: integer): integer := 0;
 function DaysInYearRange(year1, year2: integer): integer := 0;
